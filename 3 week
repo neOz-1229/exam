@@ -1,12 +1,10 @@
 1. 변수
-'''
 strVal = 'data science'
 nVal = 12345
 fVal = 1.2
 lVal = ['data','science']
 dVal = {'lecture' : 'data science'}
 bVal = True
-'''
 
 # 기본적인 주석
 '''
@@ -33,6 +31,7 @@ print('lVal : ', type(lVal))
 print('dVal : ', type(dVal))
 print('bVal : ', type(bVal))
 
+2.자료형
 '''
 같은 변수명일 경우, 이전 데이터를 덮어씀
 '''
@@ -97,6 +96,7 @@ strNewHello
 strHello.strip('반갑습니다.')    # strip()함수를 이용하여 "반갑습니다."를 제거
 strHello                    # 역시 원본 데이터는 변하지 않음
 
+3.리스트
 lnData = [1,2,3,4,5]     # lnData를 리스트로 생성
 print(lnData)
 print('type : ', type(lnData))
@@ -129,6 +129,8 @@ lnData.pop()     # 인덱스 지정이 없으면, 마지막 인덱스의 값을 
 lnData
 lnData.clear()  # 리스트의 모든 데이터를 삭제
 lnData
+
+4.튜플
 
 # 튜플의 기본 구조
 tVal = ("사과", "딸기", "바나나", "토마토", "키위")
@@ -167,7 +169,7 @@ tVal = tVal + tVal
 print("tVal memory = ", hex(id(tVal)))
 print(tVal)
 
-5.(Set)
+5.셋(Set)
 sVal = {1, 2, 3, 4, 5}
 print(sVal)
 print(type(sVal))
@@ -214,6 +216,7 @@ sVal + sData
 sVal.symmetric_difference(sData)
 
 6. 딕셔너리
+
 # 딕셔너리 기본 구조는 다음과 같이 표현할 수 있음
 dVal = {
     'name' : '이컴공',
@@ -257,52 +260,9 @@ sorted(dData.values())
 dData
 
 7.함수
+
 # 함수 f(x)를 생성하고 x 값을 입력으로 받음
 def f(x):
   # x에 10을 더한 값을 출력
   return x + 10
 f(2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
